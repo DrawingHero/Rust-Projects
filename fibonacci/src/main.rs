@@ -11,14 +11,13 @@ fn main() {
         }
     };
     //Generating Fibonacci number based on formula
-    let mut bank = 0;
     let mut count = 0;
     let mut fib1 = 1;
     let mut fib2 = 0;
     let mut finalfib = 0;
     println!("{fib2}");
     if number == 0 {
-        return println!("0 is first number of the Fibonacci Sequence.");
+        return println!("0 is the 1st number of the Fibonacci Sequence.");
     }
     println!("{fib1}");
     loop {
@@ -34,7 +33,7 @@ fn main() {
         else {
             println!("{finalfib}");
             if finalfib == number {
-                return println!("{number} is the {y}{x} Fibonacci number.", y = count + 2, x =  if bank == 2 { "nd"} else if bank == 3 {"rd"} else {"th"});
+                return println!("{number} is the {y}{x} Fibonacci number.", y = count + 2);
             }
             else if finalfib > number {
                 return println!("Num does not exist in sequence.")
